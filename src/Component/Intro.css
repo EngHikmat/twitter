@@ -1,0 +1,14 @@
+.intro{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    display: grid;
+    vertical-align: middle;
+    
+    
+}
+
+.intr{
+    margin-top: 25%;
+   font-size: 70px;
+}

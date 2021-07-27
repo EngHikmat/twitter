@@ -1,0 +1,128 @@
+.twt1{
+    width: 100%;
+    margin-right: 200px;
+    text-align: left;
+}
+
+.twt{
+    width: 100%;
+    
+    border-bottom: rgb(230, 230, 230) 1px solid;
+    
+    padding: auto;
+    height: auto;
+   
+    
+}
+
+.twt:hover{
+    cursor: pointer;
+}
+
+.twt:hover{
+    background-color: rgba(243, 243, 243, 0.432);
+    border-radius: 0;
+    color: black;
+    transition: background-color linear 100ms;
+}
+
+.twt p{
+    font-weight: 200;
+    font-size: medium;
+}
+
+.twt a:not(.username){
+    font-weight: bold;
+    color: black;
+}
+.twt a:hover:not(.username){
+    color: black;
+}
+
+.username{
+    font-size:15px;
+    margin-left: 7px;
+    color: rgba(112, 125, 136, 0.822);
+    
+}
+
+.username:hover{
+    text-decoration: none;
+    color: rgba(112, 125, 136, 0.822);
+}
+
+.twt span{
+    color: rgba(112, 125, 136, 0.822);
+    margin-left: 5px;
+}
+
+.twetpost{
+   margin-left: 70px;
+   margin-top: -25px;
+}
+
+.twt div{
+    margin-left: 13px;
+   
+    
+}
+
+.hd{
+    display: flex;
+    display: inline;
+    
+    
+}
+
+.twetFooter{
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.twetFooter span{
+    font-size: 15px;
+    padding: 10px;
+    margin-right: 60px;
+    visibility: visible;
+}
+
+.twetFooter i{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.twetFooter span:hover{
+background-color:rgba(139, 218, 255, 0.205);
+border-radius: 50px;
+color: rgb(0, 140, 255);
+
+}
+
+.twetFooter .retweet:hover{
+    background-color:rgba(139, 255, 191, 0.205);
+    border-radius: 50px;
+    color: rgb(7, 145, 37);
+}
+
+.twetFooter .love:hover{
+    background-color:rgba(255, 139, 139, 0.205);
+    border-radius: 50px;
+    color: rgb(145, 51, 7);
+}
+
+
+@media only screen and (max-width: 1000px){
+    .twetpost{
+        margin-left: 50px;
+        margin-top: -20px;
+     }
+
+     .twetFooter span{
+       
+        margin-right: 10px;
+        
+    }
+}
+
+
+

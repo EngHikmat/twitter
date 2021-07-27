@@ -1,0 +1,76 @@
+.logo{
+    width: 38px;
+    margin: auto;
+    padding: auto;
+    display: flex;
+}
+
+.header{
+    font-weight: 650;
+    letter-spacing: -1px;
+    
+}
+
+.lform{
+    height: 60px;
+    width: 50%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    border: none;
+    background-color: rgb(240, 245, 247);
+    border-bottom: solid 2px rgb(105, 105, 105);
+    border-radius: 2px;
+   
+}
+
+.lform:focus{
+    box-shadow: none;
+    background-color: rgb(240, 245, 247);
+}
+
+.login{
+    margin: 18px auto;
+    padding: auto;
+   display: block;
+    width: 50%;
+    height: 50px;
+    background-color: rgb(28, 159, 230);
+    border: none;
+    font-weight: bolder;
+    
+
+    border-radius: 50px;
+}
+
+.login:hover{
+    background-color: rgb(42, 149, 220);
+}
+
+.em{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+
+a{
+    text-decoration: none;
+    color:rgba(42, 162, 226, 0.918) 
+}
+
+a:hover{
+    color:rgba(42, 162, 226, 0.918)  ;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .form-control {
+      width: 90%;
+    }
+    .login{
+        width: 90%;
+    }
+  }

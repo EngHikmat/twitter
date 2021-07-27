@@ -1,0 +1,22 @@
+.Conta{
+    
+    float: right;
+    margin-right: 5px;
+    height: 30px;
+    
+}
+
+.bg{
+    float: right;
+    width: 30px;
+    
+}
+
+
+.bg:hover{
+    background-color: rgba(166, 230, 255, 0.603);
+    border-radius: 50px;
+    color: rgb(26, 120, 209);
+}
+
+

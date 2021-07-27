@@ -1,0 +1,151 @@
+.Header{
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    border-bottom: rgb(230, 230, 230) 1px solid;
+    
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    cursor: pointer;
+    
+}
+
+.headno{
+    font-weight: 900;
+    margin: 17px 0px -9px 17px;
+    font-size: 19px;
+}
+
+.areapost{
+    width: 90%;
+    float: right;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    resize: none;
+}
+
+.posts{
+    margin-top: 25px;
+   
+    height: 130px;
+    
+    
+    
+}
+
+.brdr{
+    width: 100%;
+    height: 10px;
+    background-color: #d3dfeba4;
+   
+    
+}
+
+.tweetsm{
+    width: 75px;
+    height: 38px;
+    border-radius: 30px;
+    margin-right: 20px;
+    float: right;
+    font-weight: 700;
+    background-color: var(--twitter-text);
+    border: none;
+}
+
+.tweetsm:disabled{
+    background-color:#61bcf1;
+    
+    
+}
+
+.cons{
+    display: flex;
+    display: inline;
+    float: left;
+    margin-left: 50px;
+    
+    
+}
+
+.cons1 i{
+    font-size: 18px;
+    color: var(--twitter-text);
+    margin-left: 10px;
+    
+}
+
+.cons1 span{
+   
+    font-size: 20px;
+    padding: 1px;
+    padding-bottom: 10px;
+    
+}
+
+
+.cons1 span:hover{
+    background-color: #e0f3ff;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.avatar{
+    margin-top: 17px;
+    margin-left: 5px;
+    width: 8%;
+}
+.avatar:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+    transition: filter linear 100ms ;
+}
+
+.ic{
+    width: 45px;
+    display: flex;
+    display: inline;
+    margin-top: 10px;
+    
+    
+    
+}
+
+.Header span{
+    
+   
+   padding-bottom: 15px;
+   padding-top: 2px;
+   margin-top: 10px;
+   margin-left: 498px;
+}
+.Header span:hover{
+    background-color: rgba(227, 242, 255, 0.719);
+    border-radius: 30px;
+ }
+
+
+.Header h5{
+    display: flex;
+    display: inline;
+    float: left;
+}
+
+@media only screen and (max-width: 1300px){
+    .cons1 span{
+        visibility: visible;
+    }
+
+    .Header span{
+        padding-bottom: 15px;
+        padding-top: 2px;
+        margin-left: 295px;
+        visibility: visible;
+        margin-right: 0;
+        
+        
+     }
+}

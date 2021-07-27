@@ -1,0 +1,77 @@
+.trendes{
+    margin-top: 65px;
+    width: 130%;
+    border-radius: 10px;
+    display: flex;
+    display: grid;
+    margin-left: 25px;
+    background-color: rgba(229, 235, 238, 0.445);
+    
+}
+
+.trendes span:not(.TrFooter){
+    border-bottom: 1px solid rgba(156, 156, 156, 0.205);
+    
+   padding: 5px;
+}
+
+.trendes .TrFooter{
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+.trendes h4{
+    font-weight: 800;
+    font-size: 19px;
+    margin-left: 5px;
+}
+
+.trendes p{
+    color: grey;
+    font-size: small;
+    font-weight: 400;
+}
+
+.trendes h6{
+font-weight: bold;
+}
+
+.TrFooter{
+    padding: 10px;
+    
+}
+
+.TrFooter a{
+    font-size: 15px;
+}
+.TrFooter a:hover{
+    text-decoration: none;
+}
+
+.trendes span:hover:not(.TrHeader){
+    background-color: rgba(158, 158, 158, 0.089);
+    cursor: pointer;
+}
+
+.trendes span:not(.TrFooter):not(.TrHeader){
+    padding: 20px;
+}
+
+
+.TrHeader i{
+    
+    float: right;
+    font-size: 18px;
+    color: var(--twitter-text);
+    margin-top: -25px;
+    margin-bottom: 5px;
+}
+
+.fa-ellipsis-h{
+    float: right;
+    font-size: 15px;
+    color: grey;
+}
+
+

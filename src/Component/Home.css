@@ -1,0 +1,60 @@
+
+.container-fuild{
+    width: 95%;
+    margin: auto;
+}
+.nv{
+    border-right: rgb(230, 230, 230) 1px solid;
+    
+    
+}
+
+
+
+.v{
+    height: 1000px;
+}
+
+
+
+.c1{
+    width: 24%;
+    
+    
+
+}
+.c2{
+    width: 45% ;
+    position: relative;
+
+}
+.c3{
+width: 20%;
+border-left: rgb(230, 230, 230) 1px solid;
+position: relative;
+}
+
+@media only screen and (max-width: 1300px) {
+    
+
+    .v{
+        border: none;
+    }
+
+    .c1{
+        width: 15%;
+        
+        
+    
+    }
+    .c2{
+        width: 85% ;
+        
+    
+    }
+    .c3{
+    display: none;
+    }
+    
+}
+
