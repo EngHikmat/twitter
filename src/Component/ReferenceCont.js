@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ReferenceCont.css";
 
 export default function ReferenceCont() {
-  const [Hashtags, setHashTags] = useState([
+  const [Hashtags] = useState([
     "#Covid_19_Virus",
     "#Jordan",
     "#Donald_Trumb",
@@ -10,7 +10,7 @@ export default function ReferenceCont() {
     "#Iraq",
   ]);
 
-  const [categ, setCateg] = useState([
+  const [categ] = useState([
     "Trending in Jordan",
     "Trending in Jordan",
     "Trending in USA",
@@ -18,7 +18,7 @@ export default function ReferenceCont() {
     "Trending on Iraq",
   ]);
 
-  const c = categ.map((s) => <span>{s}</span>);
+  //   const c = categ.map((s) => <span>{s}</span>);
 
   const x = 0;
 
@@ -38,7 +38,7 @@ export default function ReferenceCont() {
       </span>
       {tr}
       <span className="TrFooter">
-        <a href="#">Show more</a>
+        <a href="/">Show more</a>
       </span>
     </div>
   );
