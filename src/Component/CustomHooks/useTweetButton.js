@@ -1,39 +1,32 @@
-import React,{useState} from 'react';
+import { useState } from "react";
 
-export default function useTweetButton(){
-    const [disabled , setDisabled] = useState(true);
-    const [post, setPost] = useState([]);
-    const [cont , setCont] = useState();
-   
-    
+export default function useTweetButton() {
+  const [disabled, setDisabled] = useState(true);
+  const [post, setPost] = useState([]);
+  const [cont, setCont] = useState();
 
-
-
-    function handleChange(e){
-        if(e.target.value.length>0){
-            setDisabled(false)
-        }
-        else{
-            setDisabled(true)
-        }
-
-        setCont(e.target.value);
-
-        
+  function handleChange(e) {
+    if (e.target.value.length > 0) {
+      setDisabled(false);
+    } else {
+      setDisabled(true);
     }
 
-    function handleTweet(){
-        setPost([... post,{
-            id:post.length,
-            value: cont
-        }])  
-       
+    setCont(e.target.value);
+  }
 
-        
-     document.getElementById("textArea").value=''
-     setDisabled(true)
-    }
+  function handleTweet() {
+    setPost([
+      ...post,
+      {
+        id: post.length,
+        value: cont,
+      },
+    ]);
 
-    return{handleTweet, handleChange,disabled,post}
+    document.getElementById("textArea").value = "";
+    setDisabled(true);
+  }
 
+  return { handleTweet, handleChange, disabled, post };
 }

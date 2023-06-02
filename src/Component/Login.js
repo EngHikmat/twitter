@@ -6,7 +6,7 @@ import { AuthContext } from "./AuthContext";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [posts, setPosts] = useState([]);
+  const [posts] = useState([]);
   const authContext = useContext(AuthContext);
 
   function login(e) {
@@ -30,7 +30,7 @@ export default function Login() {
   return (
     <div className="container">
       <div>
-        <img src={Twitter} className="logo mt-4" />
+        <img src={Twitter} className="logo mt-4" alt="#" />
         <h4 className="text-center mt-4 mb-4 header">Log in to Twitter</h4>
       </div>
 

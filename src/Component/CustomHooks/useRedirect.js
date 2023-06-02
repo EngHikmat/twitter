@@ -1,20 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
+export default function useRedirect() {
+  const [redirect, setRedirect] = useState(false);
+  //   const [component, setComponent] = useState();
 
-export default function useRedirect(){
-    const [redirect, setRedirect] = useState(false);
-    const [component , setComponent] = useState();
+  useEffect(() => {
+    console.log("Loaded");
 
-    useEffect(()=>{
-        console.log("Loaded");
+    setTimeout(() => {
+      setRedirect(true);
+    }, 1500);
+  }, []);
 
-         setTimeout(()=>{
-            setRedirect(true);
-        },1500)
-        
-       
-    },[])
-
-    return{redirect}
-    
+  return { redirect };
 }
