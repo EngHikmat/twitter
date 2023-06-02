@@ -1,14 +1,14 @@
-.intro{
-    text-align: center;
-    display: flex;
-    margin: auto;
-    display: grid;
-    vertical-align: middle;
-    
-    
+.intro {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
-.intr{
-    margin-top: 25%;
-   font-size: 70px;
+.intr {
+  font-size: 80px !important;
 }

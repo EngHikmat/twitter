@@ -1,33 +1,30 @@
-import React from 'react';
-import Login from './Component/Login';
-import Home from './Component/Home';
-import {BrowserRouter, Route} from 'react-router-dom';
-import {AuthProvider, AuthContext} from './Component/AuthContext';
-import Intro from './Component/Intro';
-
+import React from "react";
+import Login from "./Component/Login";
+// import Home from './Component/Home';
+import { BrowserRouter } from "react-router-dom";
+import { AuthProvider, AuthContext } from "./Component/AuthContext";
+import Intro from "./Component/Intro";
 
 function App() {
   const authContext = React.useContext(AuthContext);
 
   return (
     <div className="App">
-
-      {authContext.auth.email?
+      {authContext.auth.email ? (
         <BrowserRouter>
-      <Intro/>
-      </BrowserRouter>
-      :<Login/>}
-      
-      
+          <Intro />
+        </BrowserRouter>
+      ) : (
+        <Login />
+      )}
     </div>
   );
 }
 
-function Appwithstore(){
-
-  return(
+function Appwithstore() {
+  return (
     <AuthProvider>
-      <App/>
+      <App />
     </AuthProvider>
   );
 }
